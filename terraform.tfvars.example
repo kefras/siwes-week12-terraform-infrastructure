@@ -1,0 +1,4 @@
+aws_region   = "us-east-1"
+environment  = "dev"
+project_name = "siwes-project1-rebuild"
+bucket_name  = "REPLACE-WITH-GLOBALLY-UNIQUE-LAB-BUCKET"
