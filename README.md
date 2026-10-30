@@ -20,7 +20,9 @@ Terraform-based AWS infrastructure lab demonstrating private S3 object storage, 
 | Terraform drift check | `No changes` observed |
 
 ## Architecture
-https://github.com/kefras/siwes-week12-terraform-infrastructure/blob/main/docs/Week%2012%20Terraform%20AWS%20Architecture.png
+![Week 12 AWS Infrastructure Architecture](https://github.com/kefras/siwes-week12-terraform-infrastructure/blob/main/docs/Week%2012%20Terraform%20AWS%20Architecture.png)
+*Figure 1: Terraform-managed AWS infrastructure for SIWES Week 12, showing private S3 storage, remote state, CloudFront OAC, IAM, and existing portfolio infrastructure.*
+
 ```
 
 The lab bucket and existing portfolio bucket are distinct. The existing distribution is not the delivery endpoint for the lab object.
