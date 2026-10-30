@@ -20,17 +20,7 @@ Terraform-based AWS infrastructure lab demonstrating private S3 object storage, 
 | Terraform drift check | `No changes` observed |
 
 ## Architecture
-
-```mermaid
-flowchart TB
-  T[Terraform CLI] --> B[(S3 remote state backend)]
-  T --> S[(Private S3 lab bucket)]
-  T --> O[CloudFront Origin Access Control - lab]
-  T --> I[IAM Lambda execution role]
-  S --> H[index.html - private object]
-  E[Existing CloudFront distribution - read-only data source] --> P[(Existing portfolio S3 bucket)]
-  T -. references .-> E
-  O -. not attached to existing distribution .-> E
+https://github.com/kefras/siwes-week12-terraform-infrastructure/blob/main/docs/Week%2012%20Terraform%20AWS%20Architecture.png
 ```
 
 The lab bucket and existing portfolio bucket are distinct. The existing distribution is not the delivery endpoint for the lab object.
